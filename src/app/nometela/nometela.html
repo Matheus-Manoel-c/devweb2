@@ -1,0 +1,13 @@
+<h2>Componente Two-Way</h2>
+
+<label for="nome">Nome:</label>
+<input [(ngModel)]= "nome" type="text" id="nome" 
+placeholder="Digite seu nome:" size="50">
+
+<p>Olá, {{nome}}</p>
+
+<h2>Property Biding</h2>
+
+<label for="nome">Url:</label>
+<input [(ngModel)]= "url" type="text" id="nome" placeholder="digite o url:" size="50">
+<a [href]="url" target="_blank"> <br>Abrir link</a>

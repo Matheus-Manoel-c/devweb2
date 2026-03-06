@@ -1,0 +1,22 @@
+<h2>Componente Lista</h2>
+
+<h2>ngFor e ngIf</h2>
+<ul>
+    <li *ngFor="let item of lista">
+        {{item}}
+        <span *ngIf="item == 'Arroz' ">-> Comprar 5Kg</span>
+    </li>
+</ul>
+
+ <h2>@For e @If</h2>
+
+<ul>
+  @for (item of lista; track item) {
+    <li>
+      {{ item }}
+      @if (item === 'Arroz') {
+        <span>-> Comprar 5Kg</span>
+      }
+    </li>
+  }
+</ul>
